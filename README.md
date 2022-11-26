@@ -4,7 +4,7 @@ The airflow DAG project on a daily schedule (in cron format: '0 14 * * *') gets 
 ### The structure of the project's DAG:
 1) get_cbr_api_data
 
-    Getting data about currency rates from <a href="[https://www.cbr-xml-daily.ru/daily_json.js]" target="_blank">open API</a> in the 'RUB' base.
+    Getting data about currency rates from <a href="https://www.cbr-xml-daily.ru/daily_json.js" target="_blank">open API</a> in the 'RUB' base.
 2) check_cbr_api_data
 
     Checking data for validity from the 1-st point.
@@ -13,7 +13,7 @@ The airflow DAG project on a daily schedule (in cron format: '0 14 * * *') gets 
     Creating a daily report in .csv format on currency changes (in comparison with yesterday) based on the checked data from point 2.
 4) get_fixer_api_data
 
-    Getting data about currency rates for the last 7 days from another <a href="[https://apilayer.com/]" target="_blank">open API</a> in the 'RUB' base.
+    Getting data about currency rates for the last 7 days from another <a href="https://apilayer.com" target="_blank">open API</a> in the 'RUB' base.
 5) check_fixer_api_data
 
     Checking data for validity from point 4.
